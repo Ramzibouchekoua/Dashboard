@@ -1,0 +1,21 @@
+.button {
+  background-color: #f8f8f8;
+  color: #ff5f5f;
+  border: 1px solid #ff5f5f;
+  border-radius: 4px;
+  width: fit-content;
+  height: 30px;
+  font-weight: 400;
+  padding: 0px 10px;
+}
+.button-filed {
+  background-color: #ff5f5f;
+  color: #f8f8f8;
+  border: 1px solid #ff5f5f;
+  border-radius: 4px;
+  width: fit-content;
+  height: 30px;
+  font-weight: 400;
+  margin-left: 5px;
+  padding: 0px 10px;
+}

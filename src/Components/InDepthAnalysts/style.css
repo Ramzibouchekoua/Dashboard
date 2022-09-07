@@ -1,0 +1,154 @@
+.in-depth-analyststs > div {
+  display: flex;
+  justify-content: space-between;
+}
+.sales-by-part {
+  width: 30%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px 0px;
+  padding: 20px;
+  box-shadow: -7px 2px 30px rgb(14 41 72 / 11%);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sales-by-os {
+  width: 62%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px 0px;
+  padding: 30px 20px;
+  box-shadow: -7px 2px 30px rgb(14 41 72 / 11%);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sales-by-os > div {
+  width: 45%;
+}
+.m-b-50 {
+  margin-bottom: 62px !important;
+}
+.sales-by-influencer > div {
+  width: 45%;
+}
+.sales-by-influencer {
+  width: 62%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px 0px;
+  padding: 30px 20px;
+  box-shadow: -7px 2px 30px rgb(14 41 72 / 11%);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sales-by-influencer > div .recharts-wrapper {
+  transform: rotate(90deg) !important;
+  margin-top: 30px;
+}
+.sales-by-influencer > div .recharts-wrapper tspan {
+  display: none;
+}
+.sales-by-part > .recharts-wrapper {
+  width: auto !important;
+  height: auto !important;
+  margin-left: 90px;
+}
+.sales-by-part-title {
+  color: #595669;
+  font-weight: 600;
+}
+.sales-by-part-title > a {
+  text-decoration: #ebeaef;
+  font-weight: 400;
+  text-align: right;
+}
+.title-container-sales {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.time-of-sales {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0px;
+}
+.stats-by-time {
+  width: 100%;
+  margin-top: 20px;
+}
+.time-color {
+  width: 15px;
+  height: 15px;
+  border: 3px solid red;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.time-of-sales > div {
+  display: flex;
+  align-items: center;
+}
+.night {
+  border-color: #032958;
+}
+.evening {
+  border-color: #f4a731;
+}
+.morning {
+  border-color: #ff5f5f;
+}
+.late {
+  border-color: #41b169;
+}
+.Influencer-sales-anal {
+  display: flex;
+  flex-direction: column;
+}
+.table-analysis {
+  display: flex;
+  align-items: flex-start;
+}
+.table-analysis-profile > img {
+  width: 15px;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+}
+.table-analysis-profile > span {
+  white-space: nowrap;
+  font-size: 10px;
+}
+.table-analysis-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 23px;
+}
+.info {
+  background-color: #032958 !important;
+}
+.success {
+  background-color: #41b169 !important;
+}
+.warning {
+  background-color: #f4a731 !important;
+}
+.corail {
+  background-color: #ff5f5f !important;
+}
+.error {
+  background-color: Red !important;
+}

@@ -1,0 +1,29 @@
+.profile-section {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100%;
+}
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+.personel-information {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.img-profile {
+  background-color: #fcacad;
+  border-radius: 50%;
+}
+.personel-information-profil {
+  font-size: 14px;
+  font-weight: 100;
+  text-align: right;
+}
+.name {
+  font-size: 18px;
+  font-weight: 700;
+}

@@ -1,0 +1,92 @@
+.container-main-insight {
+  display: flex;
+  justify-content: space-between;
+}
+.section-most-popular {
+  width: 45%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 4px;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 30px 0px;
+  padding: 20px;
+  box-shadow: -7px 2px 30px rgba(14, 41, 72, 0.11);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.performance {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+.performance > div img {
+  width: 25px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.performance > div {
+  border-radius: 4px;
+}
+.card-information-text {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.information-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.pink-primary {
+  background-color: #f6b4b5;
+}
+.pink-secondary {
+  background-color: #ffe1e1;
+}
+.card-main-insight {
+  width: 45%;
+  height: 100%;
+}
+.best-performance {
+  width: 45%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-img {
+  height: 150px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+}
+.infuluencer {
+  padding-top: 10px;
+}
+.infuluencer > img {
+  width: 170px;
+}
+
+.icon-instagram > img {
+  background-color: #f7c6c2;
+  padding: 10px;
+  border-radius: 50%;
+}
+.card-main-insight > .information-card {
+  background-color: #fff;
+  width: 100%;
+  margin-left: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 38px 0px;
+}
