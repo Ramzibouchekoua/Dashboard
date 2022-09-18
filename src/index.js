@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import store from "./Redux/Store";
-import { fetchData } from "./Redux/Actions";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
