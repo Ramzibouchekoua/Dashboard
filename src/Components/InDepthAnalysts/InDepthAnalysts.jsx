@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-// import "./style.css";
 import SalesByPart from "./SalesByPart";
 import SalesByOs from "./SalesByOs";
 import SalesByInfluencers from "./InDepthAnalystsBottom/SalesByInfluencers";

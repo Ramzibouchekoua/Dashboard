@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./style.css";
-import PieStats from "./PieStats.tsx";
+import PieStats from "./PieStats";
 import StatsByTime from "./StatsByTime";
 
 function SalesByPart() {

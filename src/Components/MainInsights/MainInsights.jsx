@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./style.css";
 import smartphone from "../../Assets/images/cards icons/smartphone.png";
 import target from "../../Assets/images/cards icons/target.png";

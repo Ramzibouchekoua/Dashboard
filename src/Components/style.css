@@ -2,6 +2,7 @@
   width: 90%;
   margin: auto;
   margin-top: 20px;
+  overflow-x: hidden !important;
 }
 .css-i4bv87-MuiSvgIcon-root {
   width: 15px !important;
@@ -31,4 +32,43 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
+}
+.coming-soon-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  box-shadow: -7px 2px 30px rgb(14 41 72 / 11%);
+  background-color: #fff;
+  border-radius: 4px;
+}
+.coming-soon-container > img {
+  width: 100%;
+}
+@media only screen and (max-width: 700px) {
+  .filter-homepage {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .filter-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .datapicker {
+    display: flex;
+    height: 40px;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .coming-soon-container {
+    margin-top: 80px;
+  }
 }

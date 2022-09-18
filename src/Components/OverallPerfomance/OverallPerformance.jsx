@@ -4,11 +4,11 @@ import NumberOfClicksImg from "../../Assets/images/cards icons/navigation.png";
 import SalesImg from "../../Assets/images/cards icons/shopping-bag.png";
 import TransactionsImg from "../../Assets/images/cards icons/credit-card.png";
 import NumberOfShares from "../../Assets/images/cards icons/share-2.png";
-import { PieChart, Pie, Sector, Cell } from "recharts";
+import { PieChart, Pie, Cell } from "recharts";
 function OverallPerformance({ content }) {
   const data = [
-    { name: "Conversion", value: content?.Conversion },
-    { value: 100 - content?.Conversion },
+    { name: "Conversion", value: content.Conversion },
+    { value: 100 - content.Conversion },
   ];
   const COLORS = ["rgb(5,42,86)", "#fff"];
   return (
@@ -18,13 +18,13 @@ function OverallPerformance({ content }) {
         <div className="overall-stats">
           <div className="overall-stats-container">
             <OverallStats
-              Res={content?.Sales}
+              Res={content.Sales}
               imgUrl={SalesImg}
               label={"Sales"}
               nameclass={"sales-component"}
             />
             <OverallStats
-              Res={content?.Transactions}
+              Res={content.Transactions}
               imgUrl={TransactionsImg}
               label={"Transactions"}
               nameclass={"transactions-component"}
@@ -32,7 +32,7 @@ function OverallPerformance({ content }) {
           </div>
           <div className="overall-stats-container">
             <OverallStats
-              Res={content?.NumberOfClicks}
+              Res={content.NumberOfClicks}
               imgUrl={
                 "https://icones.pro/wp-content/uploads/2021/05/icone-de-panier-jaune.png"
               }
@@ -40,13 +40,13 @@ function OverallPerformance({ content }) {
               nameclass={" panier-moyen "}
             />
             <OverallStats
-              Res={content?.NumberOfShares}
+              Res={content.NumberOfShares}
               imgUrl={NumberOfShares}
               label={" Number of shares "}
               nameclass={"number-of-shares"}
             />
             <OverallStats
-              Res={content?.NumberOfClicks}
+              Res={content.NumberOfClicks}
               imgUrl={NumberOfClicksImg}
               label={" Number of Clicks "}
               nameclass={"number-of-clicks"}
@@ -57,7 +57,7 @@ function OverallPerformance({ content }) {
           <div>
             {" "}
             <span>Conversion</span>
-            <span>{content?.Conversion + "%"}</span>
+            <span>{content.Conversion + "%"}</span>
           </div>
           <PieChart width={250} height={400}>
             <Pie

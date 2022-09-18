@@ -13,17 +13,21 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import OverallPerformance from "./OverallPerfomance/OverallPerformance";
 import MainInsights from "./MainInsights/MainInsights";
 import InDepthAnalysts from "./InDepthAnalysts/InDepthAnalysts";
+import { fetchData } from "../Redux/Actions";
+import { useDispatch, useSelector } from "react-redux";
 function HomePage() {
+  const dispatch = useDispatch();
+  const data = useSelector((state) => state.allStats.Stats);
   const [open, setOpen] = useState(false);
-  const [content, setContent] = useState({});
+
   useEffect(() => {
-    DataFetch();
+    dispatch(fetchData());
   }, []);
-  const DataFetch = () => {
-    fetch("https://api.npoint.io/6711aa214455290ca33b")
-      .then((response) => response.json())
-      .then((data) => setContent(data));
-  };
+  // const DataFetch = () => {
+  //   fetch("https://api.npoint.io/6711aa214455290ca33b")
+  //     .then((response) => response.json())
+  //     .then((data) => setContent(data));
+  // };
 
   const handleOpen = () => {
     setOpen(true);
@@ -63,7 +67,7 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <OverallPerformance content={content} />
+      <OverallPerformance content={data} />
       <MainInsights />
       <InDepthAnalysts />
       {/* Modal calendar  */}

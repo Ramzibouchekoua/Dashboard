@@ -1,11 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
-import LinearProgress, {
-  linearProgressClasses,
-} from "@mui/material/LinearProgress";
-import BarCharts from "./BarCharts.tsx";
+import BarCharts from "./BarCharts";
 import infl1 from "../../../Assets/images/avatars/Image.png";
 import Pr01 from "../../../Assets/images/products/01.png";
+import SalesByCountry from "./SalesByCountry";
 
 function SalesByInfluencers() {
   const dataOs = [
@@ -86,7 +83,7 @@ function SalesByInfluencers() {
   ];
 
   return (
-    <div className="in-depth-analyststs ">
+    <div className="in-depth-analyststs-Section ">
       <div className="sales-by-influencer">
         <div className="Influencer-sales-anal">
           {" "}
@@ -131,6 +128,7 @@ function SalesByInfluencers() {
           </div>
         </div>
       </div>
+      <SalesByCountry />
     </div>
   );
 }

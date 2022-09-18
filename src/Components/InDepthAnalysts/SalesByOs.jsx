@@ -1,6 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import BarCharts from "./BarCharts.tsx";
+import BarCharts from "./BarCharts";
 
 function SalesByOs() {
   const dataOs = [
@@ -31,11 +30,11 @@ function SalesByOs() {
       pv: 609.45,
     },
     {
-      name: "Mo..",
+      name: "Mo",
       pv: 413.01,
     },
     {
-      name: "Cha...",
+      name: "Cha",
       pv: 183.53,
     },
     {

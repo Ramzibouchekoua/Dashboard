@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./style.css";
 
 function StatsByTime({ data }) {
@@ -9,9 +8,9 @@ function StatsByTime({ data }) {
         <div className="time-of-sales" key={item.index}>
           <div>
             <div className={"time-color " + item.Class}></div>
-            <span>{item?.name}</span>
+            <span>{item.name}</span>
           </div>
-          <span>{item?.value + "K €"}</span>
+          <span>{item.value + "K €"}</span>
         </div>
       ))}
     </div>

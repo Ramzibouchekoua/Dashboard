@@ -6,30 +6,29 @@ import LinearProgress, {
 } from "@mui/material/LinearProgress";
 import { Box } from "@mui/material";
 
-function Progress() {
+function Progress({ Country, Res, Color, SecondColor, Value }) {
   const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     height: 10,
     borderRadius: 5,
-    [`&.${linearProgressClasses.colorPrimary}`]: {
-      backgroundColor:
-        theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
-    },
+    backgroundColor: SecondColor,
+
     [`& .${linearProgressClasses.bar}`]: {
       borderRadius: 5,
-      backgroundColor: theme.palette.mode === "light" ? "red" : "#308fe8",
+      backgroundColor: theme.palette.mode === "light" ? Color : SecondColor,
     },
   }));
   return (
     <Box>
-      <span>22.54</span>
-      <BorderLinearProgress variant="determinate" value={50} />
+      <span className="country-name">{Country + ": " + Res + "K€"} </span>
+      <BorderLinearProgress variant={"determinate"} value={Value} />
     </Box>
   );
 }
 Progress.propTypes = {
-  value: PropTypes.string,
+  Value: PropTypes.string,
   Country: PropTypes.string,
   Res: PropTypes.number,
   Color: PropTypes.string,
+  SecondColor: PropTypes.string,
 };
 export default Progress;

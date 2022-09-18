@@ -7,12 +7,12 @@ function Profile() {
     <div className="profile-section">
       <div className="profile">
         <div className="personel-information">
-          <span className="name ">{person?.Name}</span>
+          <span className="name ">{person.Name}</span>
           <span className="personel-information-profil">Profile</span>
         </div>
         <img
-          src={person?.ProfileImage}
-          alt={person?.firstName}
+          src={person.ProfileImage}
+          alt={person.firstName}
           className="img-profile"
         />
       </div>
